@@ -119,11 +119,19 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
+    /* Galleria a scorrimento */
     .galleria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      overflow-x: auto;
       gap: 1rem;
-      margin-top: 2rem;
+      padding: 1rem 0;
+      scroll-behavior: smooth;
+    }
+
+    .galleria div {
+      flex-shrink: 0;
+      width: 90%;
+      max-width: 400px;
     }
 
     .galleria img {
@@ -172,6 +180,14 @@
 
       .lista {
         flex-direction: column;
+      }
+
+      .galleria {
+        flex-wrap: nowrap;
+      }
+
+      .galleria div {
+        max-width: 100%;
       }
     }
   </style>
@@ -226,24 +242,41 @@
 
   <section id="immagini">
     <h2>Galleria Fotografica</h2>
+
+    <!-- Calendario Incontri -->
     <div class="galleria">
-      <h3>Calendario Incontri con i cittadini</h3>
-      <img src="Incontri.jpg" alt="Calendario incontri con i cittadini">
+      <div>
+        <h3>Calendario Incontri con i cittadini</h3>
+        <img src="Incontri.jpg" alt="Calendario incontri con i cittadini">
+      </div>
     </div>
+
+    <!-- Primo incontro -->
     <div class="galleria">
-      <h3>Primo Incontro, Sala Giovanni Paolo II</h3>
-      <img src="PI.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
-      <img src="PI2.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
-      <img src="PI3.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
+      <div>
+        <h3>Primo Incontro, Sala Giovanni Paolo II</h3>
+        <img src="PI.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
+        <img src="PI2.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
+        <img src="PI3.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
+      </div>
     </div>
+
+    <!-- Secondo incontro -->
     <div class="galleria">
-      <h3>Secondo incontro con i cittadini, Sala parrocchiale Casette D'ete</h3>
-      <img src="immagine3.jpg" alt="Secondo Incontro, Sala Parrocchiale Casette D'ete">
+      <div>
+        <h3>Secondo incontro con i cittadini, Sala parrocchiale Casette D'ete</h3>
+        <img src="immagine3.jpg" alt="Secondo Incontro, Sala Parrocchiale Casette D'ete">
+      </div>
     </div>
+
+    <!-- Terzo incontro -->
     <div class="galleria">
-      <h3>Terzo incontro con i cittadini, Bar 2 Ruote, Luce</h3>
-      <img src="immagine3.jpg" alt="Terzo Incontro, Bar 2 Ruote, Luce">
+      <div>
+        <h3>Terzo incontro con i cittadini, Bar 2 Ruote, Luce</h3>
+        <img src="immagine3.jpg" alt="Terzo Incontro, Bar 2 Ruote, Luce">
+      </div>
     </div>
+
   </section>
 
   <section id="contatti">
