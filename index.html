@@ -119,7 +119,6 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    /* Galleria */
     .galleria {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -130,7 +129,6 @@
     .galleria img {
       width: 100%;
       height: auto;
-      max-width: 400px;  /* Limita la larghezza massima delle immagini */
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       transition: transform 0.4s;
@@ -174,11 +172,6 @@
 
       .lista {
         flex-direction: column;
-      }
-
-      .galleria img {
-        max-width: 100%;
-        /* Assicura che le immagini non escano dal layout su dispositivi mobili */
       }
     }
   </style>
@@ -234,20 +227,20 @@
   <section id="immagini">
     <h2>Galleria Fotografica</h2>
     <div class="galleria">
-       <h3>Calendario Incontri con i cittadini</h3>
+      <h3>Calendario Incontri con i cittadini</h3>
       <img src="Incontri.jpg" alt="Calendario incontri con i cittadini">
     </div>
-    <div>
-      <h3> Primo Incontro, Sala Giovanni Paolo II</h3>
-       <img src="PI.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
-       <img src="PI2.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
-       <img src="PI3.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
+    <div class="galleria">
+      <h3>Primo Incontro, Sala Giovanni Paolo II</h3>
+      <img src="PI.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
+      <img src="PI2.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
+      <img src="PI3.jpg" alt="Primo Incontro, Sala Giovanni Paolo II">
     </div>
-    <div>
+    <div class="galleria">
       <h3>Secondo incontro con i cittadini, Sala parrocchiale Casette D'ete</h3>
       <img src="immagine3.jpg" alt="Secondo Incontro, Sala Parrocchiale Casette D'ete">
     </div>
-    <div>
+    <div class="galleria">
       <h3>Terzo incontro con i cittadini, Bar 2 Ruote, Luce</h3>
       <img src="immagine3.jpg" alt="Terzo Incontro, Bar 2 Ruote, Luce">
     </div>
